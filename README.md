@@ -6,17 +6,25 @@ This repository is the standalone Assessment 1 MonoGame project. It is a pinned,
 
 Use this route for normal college work.
 
-1. Clone this repository into:
+1. Open PowerShell in this folder:
 
    ```text
    C:\Users\<your-login>\Documents\projects
    ```
 
-2. Open the cloned `BFC-Advanced-Games-Programming-Assessment-1` folder in Visual Studio Code.
-3. In File Explorer, double-click `Setup-Assessment1.cmd`.
-4. Wait for the setup window to report `ASSESSMENT 1 SETUP COMPLETE`.
-5. Open the repository in Visual Studio Code if it is not already open.
-6. Run this command in the integrated terminal:
+2. Run this command to download the repository:
+
+   ```powershell
+   git clone https://github.com/brockbankl/BFC-Advanced-Games-Programming-Assessment-1.git
+   ```
+
+   If Git is not available, use GitHub's **Code > Download ZIP**, extract the repository inside `Documents\projects`, then open the extracted folder in Visual Studio Code.
+
+3. Open the cloned `BFC-Advanced-Games-Programming-Assessment-1` folder in Visual Studio Code.
+4. In File Explorer, double-click `Setup-Assessment1.cmd`.
+5. Wait for the setup window to report `ASSESSMENT 1 SETUP COMPLETE`.
+6. Open the repository in Visual Studio Code if it is not already open.
+7. Run this command in the integrated terminal:
 
    ```powershell
    dotnet run --project ./WindowsDX/Platformer3D.csproj
