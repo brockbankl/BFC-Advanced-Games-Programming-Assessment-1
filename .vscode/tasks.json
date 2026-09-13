@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "BFC: Setup Assessment 1",
+      "type": "shell",
+      "command": "powershell",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}\\Setup-Assessment1.ps1"],
+      "problemMatcher": []
+    },
+    {
+      "label": "BFC: Build WindowsDX",
+      "type": "shell",
+      "command": "dotnet",
+      "args": ["build", "${workspaceFolder}/WindowsDX/Platformer3D.csproj"],
+      "group": {"kind": "build", "isDefault": true},
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "BFC: Build DesktopGL",
+      "type": "shell",
+      "command": "dotnet",
+      "args": ["build", "${workspaceFolder}/DesktopGL/Platformer3D.csproj"],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "BFC: Run WindowsDX",
+      "type": "shell",
+      "command": "dotnet",
+      "args": ["run", "--project", "${workspaceFolder}/WindowsDX/Platformer3D.csproj"],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "BFC: Run DesktopGL",
+      "type": "shell",
+      "command": "dotnet",
+      "args": ["run", "--project", "${workspaceFolder}/DesktopGL/Platformer3D.csproj"],
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}

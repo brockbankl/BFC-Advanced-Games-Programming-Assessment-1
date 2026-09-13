@@ -1,0 +1,14 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/DesktopGL/">
+    <Project Path="DesktopGL/Platformer3D.csproj" DefaultStartup="true" />
+  </Folder>
+  <Folder Name="/WindowsDX/">
+    <Project Path="WindowsDX/Platformer3D.csproj" DefaultStartup="true" />
+  </Folder>
+  <Project Path="Content/Content.csproj" />
+</Solution>

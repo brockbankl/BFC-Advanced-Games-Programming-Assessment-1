@@ -1,0 +1,32 @@
+# Local teaching files are intentionally excluded from the student repository.
+# Never force-add this directory.
+_teacher/
+
+# Local editor and operating-system files.
+.DS_Store
+Thumbs.db
+*.user
+*.suo
+*.userprefs
+
+# Temporary logs produced by local checks.
+*.log
+
+# MonoGame/.NET build output.
+bin/
+obj/
+*.xnb
+.artifacts/
+/Content/Output/
+
+# IDE-generated files.
+.vs/
+*.userinfo
+
+# Blender backup files.
+*.blend1
+
+# Local state from optional tooling.
+__pycache__/
+*.py[cod]
+.venv/

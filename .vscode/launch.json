@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "WindowsDX",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "BFC: Build WindowsDX",
+      "program": "${workspaceFolder}/WindowsDX/bin/Debug/net10.0-windows/3DPlatformer.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/WindowsDX",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": "DesktopGL",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "BFC: Build DesktopGL",
+      "program": "${workspaceFolder}/DesktopGL/bin/Debug/net10.0/3DPlatformer.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/DesktopGL",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    }
+  ]
+}
